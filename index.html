@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức</title>
+    <style>
+        /* ========================
+           BỐ CỤC DI ĐỘNG (MẶC ĐỊNH)
+           ======================== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            width: 100%;          /* Di động: 1 cột */
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .news-item img {
+            width: 100%;          /* Hình ảnh co vừa div */
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        /* ========================
+           CHẾ ĐỘ XEM MÁY TÍNH BẢNG
+           Kích hoạt khi min-width: 772px
+           ======================== */
+        @media (min-width: 772px) {
+            .news-item {
+                width: 45%;              /* Hai div ngang */
+                display: inline-block;
+                margin: 2.5%;            /* Khoảng cách giữa các div */
+                vertical-align: top;
+            }
+
+            .news-item img {
+                max-height: 30vh;        /* Chiều cao tối đa 30% khung nhìn */
+                width: auto;             /* Giữ tỷ lệ hình ảnh */
+            }
+        }
+
+        /* ========================
+           CHẾ ĐỘ XEM MÀN HÌNH LỚN
+           Kích hoạt khi min-width: 998px
+           ======================== */
+        @media (min-width: 998px) {
+            .news-item {
+                width: 30%;              /* Ba div ngang */
+                display: inline-block;
+                margin: 1.66%;           /* Khoảng cách đều nhau */
+                vertical-align: top;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tin Tức Hôm Nay</h1>
+    <div class="container">
+        <div class="news-item">
+            <img src="https://via.placeholder.com/400x200" alt="Tin 1">
+            <h2>Tiêu đề Tin 1</h2>
+            <p>Nội dung tóm tắt về tin tức thứ nhất.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/400x200" alt="Tin 2">
+            <h2>Tiêu đề Tin 2</h2>
+            <p>Nội dung tóm tắt về tin tức thứ hai.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/400x200" alt="Tin 3">
+            <h2>Tiêu đề Tin 3</h2>
+            <p>Nội dung tóm tắt về tin tức thứ ba.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/400x200" alt="Tin 4">
+            <h2>Tiêu đề Tin 4</h2>
+            <p>Nội dung tóm tắt về tin tức thứ tư.</p>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/400x200" alt="Tin 5">
+            <h2>Tiêu đề Tin 5</h2>
+            <p>Nội dung tóm tắt về tin tức thứ năm.</p>
+        </div>
+    </div>
+</body>
+</html>
