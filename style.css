@@ -1,0 +1,58 @@
+/* ========================
+   BỐ CỤC DI ĐỘNG (MẶC ĐỊNH)
+   ======================== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.news-item {
+    width: 100%;          /* Di động: 1 cột */
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 100%;          /* Hình ảnh co vừa div */
+    height: auto;
+    display: block;
+}
+
+/* ========================
+   CHẾ ĐỘ XEM MÁY TÍNH BẢNG
+   Kích hoạt khi min-width: 772px
+   ======================== */
+@media (min-width: 772px) {
+    .news-item {
+        width: 45%;              /* Hai div ngang */
+        display: inline-block;
+        margin: 2.5%;            /* Khoảng cách giữa các div */
+        vertical-align: top;
+    }
+
+    .news-item img {
+        max-height: 30vh;        /* Chiều cao tối đa 30% khung nhìn */
+        width: auto;             /* Giữ tỷ lệ hình ảnh */
+    }
+}
+
+/* ========================
+   CHẾ ĐỘ XEM MÀN HÌNH LỚN
+   Kích hoạt khi min-width: 998px
+   ======================== */
+@media (min-width: 998px) {
+    .news-item {
+        width: 30%;              /* Ba div ngang */
+        display: inline-block;
+        margin: 1.66%;           /* Khoảng cách đều nhau */
+        vertical-align: top;
+    }
+
+    /* Hình ảnh giữ nguyên từ chế độ tablet */
+}
